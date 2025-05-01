@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">480627081191</string>
+    <string name="google_api_key" translatable="false">AIzaSyC7O5yfc1VZSxcOuC4HJwuC17wsSFtY13c</string>
+    <string name="google_app_id" translatable="false">1:480627081191:android:b367a776ed36074a36c742</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC7O5yfc1VZSxcOuC4HJwuC17wsSFtY13c</string>
+    <string name="google_storage_bucket" translatable="false">jobquest-b1284.firebasestorage.app</string>
+    <string name="project_id" translatable="false">jobquest-b1284</string>
+</resources>

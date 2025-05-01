@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "JobQuest"
+rootProject.name = "JobQuestBottomNavigation"
 include(":app")
+ 

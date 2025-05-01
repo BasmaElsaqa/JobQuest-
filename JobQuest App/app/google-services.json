@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480627081191",
+    "project_id": "jobquest-b1284",
+    "storage_bucket": "jobquest-b1284.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480627081191:android:5f717d91d5b208d036c742",
+        "android_client_info": {
+          "package_name": "com.android.jobquest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7O5yfc1VZSxcOuC4HJwuC17wsSFtY13c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480627081191:android:b367a776ed36074a36c742",
+        "android_client_info": {
+          "package_name": "com.example.jobquestbottomnavigation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7O5yfc1VZSxcOuC4HJwuC17wsSFtY13c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
