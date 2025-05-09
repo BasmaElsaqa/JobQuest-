@@ -5,21 +5,32 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
 
+
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.jobquestbottomnavigation.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_jobs"
         android:name="com.example.jobquestbottomnavigation.ui.jobs.JobsFragment"
-        android:label="@string/title_dashboard"
+        android:label="Jobs"
         tools:layout="@layout/fragment_jobs" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_saved"
         android:name="com.example.jobquestbottomnavigation.ui.saved.SavedFragment"
-        android:label="@string/title_notifications"
+        android:label="Saved"
         tools:layout="@layout/fragment_saved" />
+    <fragment
+        android:id="@+id/navigation_track"
+        android:name="com.example.jobquestbottomnavigation.ui.track.TrackFragment"
+        android:label="Track"
+        tools:layout="@layout/fragment_track" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.jobquestbottomnavigation.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

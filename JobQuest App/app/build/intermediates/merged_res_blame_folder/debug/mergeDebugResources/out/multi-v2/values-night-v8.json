@@ -4,6 +4,25 @@
             "outputFile": "com.example.jobquestbottomnavigation.app-mergeDebugResources-58:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
+                    "source": "C:\\android developer\\JobQuest-\\JobQuest App\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "813"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "687",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1279"
+                    }
+                },
+                {
                     "source": "C:\\Users\\user\\.gradle\\caches\\8.11.1\\transforms\\ee23f6de2a47dfcee3b2b1bf84bbafbf\\transformed\\appcompat-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -35,25 +54,6 @@
                         "startOffsets": "1284,1359,1470,1559,1660,1767,1874,1973,2080,2183,2310,2398,2522,2624,2726,2842,2944,3058,3186,3302,3424,3560,3680,3814,3934,4046,4261,4378,4502,4632,4754,4892,5026,5142",
                         "endColumns": "74,110,88,100,106,106,98,106,102,126,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "1354,1465,1554,1655,1762,1869,1968,2075,2178,2305,2393,2517,2619,2721,2837,2939,3053,3181,3297,3419,3555,3675,3809,3929,4041,4167,4373,4497,4627,4749,4887,5021,5137,5257"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\user\\AndroidStudioProjects\\JobQuestBottomNavigation\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "813"
-                    },
-                    "to": {
-                        "startLines": "9",
-                        "startColumns": "4",
-                        "startOffsets": "687",
-                        "endLines": "21",
-                        "endColumns": "12",
-                        "endOffsets": "1279"
                     }
                 }
             ]

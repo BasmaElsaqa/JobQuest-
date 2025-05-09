@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/developer"
+            android:padding="6dp"
+            android:id="@+id/dev_ic"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/saved_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="6dp"/>
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/dev_ic"
+            app:layout_constraintTop_toTopOf="@id/dev_ic"
+            android:id="@+id/jobTitle"
+            android:padding="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senior UX Designer"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:paddingBottom="6dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            app:layout_constraintStart_toEndOf="@id/dev_ic"
+            app:layout_constraintTop_toBottomOf="@id/jobTitle"
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TechCorp Inc."
+            android:textColor="#666" />
+
+
+            <TextView
+                android:padding="6dp"
+                app:layout_constraintStart_toEndOf="@id/dev_ic"
+                app:layout_constraintTop_toBottomOf="@id/companyName"
+                android:id="@+id/jobType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full-time"
+                android:background="@drawable/rounded_edittext"
+                android:textColor="#333"
+                android:layout_marginEnd="6dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp" />
+
+            <TextView
+                android:layout_marginStart="6dp"
+                android:padding="6dp"
+                android:background="@drawable/rounded_edittext"
+                app:layout_constraintStart_toEndOf="@id/jobType"
+                app:layout_constraintTop_toBottomOf="@id/companyName"
+                android:id="@+id/locationType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remote"
+                android:textColor="#333" />
+
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/locationType"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/salaryRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$120k - $150k"
+            android:textColor="#444"
+            android:padding="6dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/locationType"
+            android:id="@+id/savedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved 2 days ago"
+            android:textSize="12sp"
+            android:padding="6dp"
+            android:textColor="#999"
+            android:layout_marginTop="6dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

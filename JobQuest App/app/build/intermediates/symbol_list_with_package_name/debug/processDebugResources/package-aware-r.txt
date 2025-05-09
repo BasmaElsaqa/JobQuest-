@@ -3087,6 +3087,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable backarrow
 drawable baseline_email_24
+drawable baseline_visibility_off_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3120,6 +3121,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable developer
 drawable edit_text_bg
 drawable fingerprint_dialog_error
 drawable fingerprint_dialog_fp_icon
@@ -3159,6 +3161,7 @@ drawable interviweing
 drawable jobs
 drawable linkedin
 drawable lock
+drawable logo_background_rounded
 drawable logograybg
 drawable logowithblackbg
 drawable m3_avd_hide_password
@@ -3236,7 +3239,9 @@ drawable notify_panel_notification_icon_bg
 drawable offers
 drawable profile
 drawable rejected
+drawable rounded_edittext
 drawable saved
+drawable saved_button
 drawable saved_icon
 drawable searchicon
 drawable test_level_drawable
@@ -3387,6 +3392,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id companyName
 id company_name
 id compress
 id confirm_button
@@ -3420,6 +3426,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id dev_ic
 id dialog_button
 id dimensions
 id direct
@@ -3445,7 +3452,6 @@ id edge
 id edit_query
 id edit_text_id
 id elastic
-id email
 id email_text
 id embed
 id end
@@ -3453,6 +3459,8 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id etEmail
+id etPassword
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3511,6 +3519,8 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id jobTitle
+id jobType
 id job_description
 id job_title
 id job_title_input
@@ -3528,6 +3538,7 @@ id linear
 id listMode
 id list_item
 id locale
+id locationType
 id location_input
 id login_btn
 id login_button
@@ -3604,11 +3615,9 @@ id navigation_bar_item_icon_view
 id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
-id navigation_dashboard
 id navigation_header_container
 id navigation_home
 id navigation_jobs
-id navigation_notifications
 id navigation_profile
 id navigation_saved
 id navigation_track
@@ -3652,7 +3661,6 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
-id password
 id password_text
 id password_toggle
 id path
@@ -3669,6 +3677,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerSavedJobs
 id rejected_tv
 id rejected_tv2
 id repassword
@@ -3682,9 +3691,11 @@ id rounded
 id row_index_key
 id rtl
 id rv
+id salaryRange
 id save_for_later_btn
 id save_non_transition_alpha
 id save_overlay_view
+id savedDate
 id sawtooth
 id scale
 id screen
@@ -3744,6 +3755,7 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id status_tabs
 id stop
 id stretch
 id submenuarrow
@@ -3776,7 +3788,6 @@ id textTop
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_notifications
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -3788,6 +3799,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id togglePasswordVisibility
 id top
 id topPanel
 id touch_outside
@@ -3811,6 +3823,7 @@ id useLogo
 id vertical
 id vertical_only
 id view_offset_helper
+id view_pager
 id view_transition
 id view_tree_disjoint_parent
 id view_tree_lifecycle_owner
@@ -3972,13 +3985,18 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fingerprint_dialog_layout
+layout fragment_applied
 layout fragment_home
+layout fragment_interviewing
 layout fragment_jobs
+layout fragment_offer
 layout fragment_profile
+layout fragment_rejected
 layout fragment_saved
 layout fragment_track
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_saved_job
 layout jobs_item_list
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

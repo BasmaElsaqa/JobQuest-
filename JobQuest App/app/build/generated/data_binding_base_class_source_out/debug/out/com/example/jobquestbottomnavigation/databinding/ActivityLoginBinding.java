@@ -4,6 +4,8 @@ package com.example.jobquestbottomnavigation.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -13,7 +15,6 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.jobquestbottomnavigation.R;
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -26,7 +27,10 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView createAccount;
 
   @NonNull
-  public final TextInputLayout email;
+  public final EditText etEmail;
+
+  @NonNull
+  public final EditText etPassword;
 
   @NonNull
   public final TextView forgotPass;
@@ -41,29 +45,30 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView orDivider;
 
   @NonNull
-  public final TextInputLayout password;
-
-  @NonNull
   public final ProgressBar progressBar;
 
   @NonNull
   public final TextView signup;
 
+  @NonNull
+  public final ImageView togglePasswordVisibility;
+
   private ActivityLoginBinding(@NonNull ScrollView rootView, @NonNull TextView createAccount,
-      @NonNull TextInputLayout email, @NonNull TextView forgotPass,
+      @NonNull EditText etEmail, @NonNull EditText etPassword, @NonNull TextView forgotPass,
       @NonNull MaterialButton loginButton, @NonNull ScrollView main, @NonNull TextView orDivider,
-      @NonNull TextInputLayout password, @NonNull ProgressBar progressBar,
-      @NonNull TextView signup) {
+      @NonNull ProgressBar progressBar, @NonNull TextView signup,
+      @NonNull ImageView togglePasswordVisibility) {
     this.rootView = rootView;
     this.createAccount = createAccount;
-    this.email = email;
+    this.etEmail = etEmail;
+    this.etPassword = etPassword;
     this.forgotPass = forgotPass;
     this.loginButton = loginButton;
     this.main = main;
     this.orDivider = orDivider;
-    this.password = password;
     this.progressBar = progressBar;
     this.signup = signup;
+    this.togglePasswordVisibility = togglePasswordVisibility;
   }
 
   @Override
@@ -99,9 +104,15 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.email;
-      TextInputLayout email = ViewBindings.findChildViewById(rootView, id);
-      if (email == null) {
+      id = R.id.etEmail;
+      EditText etEmail = ViewBindings.findChildViewById(rootView, id);
+      if (etEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.etPassword;
+      EditText etPassword = ViewBindings.findChildViewById(rootView, id);
+      if (etPassword == null) {
         break missingId;
       }
 
@@ -125,12 +136,6 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.password;
-      TextInputLayout password = ViewBindings.findChildViewById(rootView, id);
-      if (password == null) {
-        break missingId;
-      }
-
       id = R.id.progress_bar;
       ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
       if (progressBar == null) {
@@ -143,8 +148,14 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ScrollView) rootView, createAccount, email, forgotPass,
-          loginButton, main, orDivider, password, progressBar, signup);
+      id = R.id.togglePasswordVisibility;
+      ImageView togglePasswordVisibility = ViewBindings.findChildViewById(rootView, id);
+      if (togglePasswordVisibility == null) {
+        break missingId;
+      }
+
+      return new ActivityLoginBinding((ScrollView) rootView, createAccount, etEmail, etPassword,
+          forgotPass, loginButton, main, orDivider, progressBar, signup, togglePasswordVisibility);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

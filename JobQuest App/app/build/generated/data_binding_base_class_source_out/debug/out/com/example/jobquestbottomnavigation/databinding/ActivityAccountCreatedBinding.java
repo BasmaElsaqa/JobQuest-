@@ -25,13 +25,13 @@ public final class ActivityAccountCreatedBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
-  public final MaterialButton createAccountBtn;
-
-  @NonNull
   public final TextView description;
 
   @NonNull
   public final ImageView icon;
+
+  @NonNull
+  public final MaterialButton loginBtn;
 
   @NonNull
   public final LinearLayout main;
@@ -40,13 +40,13 @@ public final class ActivityAccountCreatedBinding implements ViewBinding {
   public final TextView title;
 
   private ActivityAccountCreatedBinding(@NonNull LinearLayout rootView, @NonNull TextView appName,
-      @NonNull MaterialButton createAccountBtn, @NonNull TextView description,
-      @NonNull ImageView icon, @NonNull LinearLayout main, @NonNull TextView title) {
+      @NonNull TextView description, @NonNull ImageView icon, @NonNull MaterialButton loginBtn,
+      @NonNull LinearLayout main, @NonNull TextView title) {
     this.rootView = rootView;
     this.appName = appName;
-    this.createAccountBtn = createAccountBtn;
     this.description = description;
     this.icon = icon;
+    this.loginBtn = loginBtn;
     this.main = main;
     this.title = title;
   }
@@ -84,12 +84,6 @@ public final class ActivityAccountCreatedBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.create_account_btn;
-      MaterialButton createAccountBtn = ViewBindings.findChildViewById(rootView, id);
-      if (createAccountBtn == null) {
-        break missingId;
-      }
-
       id = R.id.description;
       TextView description = ViewBindings.findChildViewById(rootView, id);
       if (description == null) {
@@ -102,6 +96,12 @@ public final class ActivityAccountCreatedBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.login_btn;
+      MaterialButton loginBtn = ViewBindings.findChildViewById(rootView, id);
+      if (loginBtn == null) {
+        break missingId;
+      }
+
       LinearLayout main = (LinearLayout) rootView;
 
       id = R.id.title;
@@ -110,8 +110,8 @@ public final class ActivityAccountCreatedBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAccountCreatedBinding((LinearLayout) rootView, appName, createAccountBtn,
-          description, icon, main, title);
+      return new ActivityAccountCreatedBinding((LinearLayout) rootView, appName, description, icon,
+          loginBtn, main, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

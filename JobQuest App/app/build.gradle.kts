@@ -62,5 +62,7 @@ dependencies {
     implementation(libs.androidx.core.ktx.v1101)
     implementation(libs.androidx.appcompat.v161)
     implementation(libs.androidx.emoji2)
+    implementation ("com.google.android.material:material:1.9.0")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
 
 }

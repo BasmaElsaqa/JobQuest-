@@ -79,6 +79,16 @@
             android:textColor="#888888"
             android:textSize="12sp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Job Description:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <!-- Job Description -->
         <TextView
             android:id="@+id/job_description"

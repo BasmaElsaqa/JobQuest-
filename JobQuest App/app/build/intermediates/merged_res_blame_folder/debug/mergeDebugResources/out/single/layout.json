@@ -1,62 +1,78 @@
 [
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\activity_account_created.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_account_created.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_interviewing.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_interviewing.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\activity_apply_for_position.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_apply_for_position.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_profile.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/activity_apply_for_position.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/activity_apply_for_position.xml"
     },
     {
         "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/activity_landing_page.xml",
         "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/activity_landing_page.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_profile.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/activity_login.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_main.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/activity_account_created.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/activity_account_created.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\activity_sign_up.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_sign_up.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_home.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_home.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_offer.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_offer.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\fragment_saved.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_saved.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_track.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_track.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\fragment_track.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_track.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/activity_job_details.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/activity_job_details.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\activity_landing_page.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_landing_page.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/reacent_activity_item_list.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/reacent_activity_item_list.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\activity_job_details.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_job_details.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_saved.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_saved.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\reacent_activity_item_list.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\reacent_activity_item_list.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_rejected.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_rejected.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\jobs_item_list.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\jobs_item_list.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/activity_main.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_login.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_applied.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_applied.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-mergeDebugResources-59:\\layout\\fragment_jobs.xml",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_jobs.xml"
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/fragment_jobs.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_jobs.xml"
+    },
+    {
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/activity_sign_up.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/jobs_item_list.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/jobs_item_list.xml"
+    },
+    {
+        "merged": "com.example.jobquestbottomnavigation.app-mergeDebugResources-59:/layout/item_saved_job.xml",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/item_saved_job.xml"
     }
 ]

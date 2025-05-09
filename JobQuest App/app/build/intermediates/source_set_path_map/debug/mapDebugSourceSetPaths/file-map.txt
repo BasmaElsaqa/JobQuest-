@@ -53,11 +53,11 @@ com.example.jobquestbottomnavigation.app-appcompat-1.7.0-51 C:\Users\user\.gradl
 com.example.jobquestbottomnavigation.app-startup-runtime-1.1.1-52 C:\Users\user\.gradle\caches\8.11.1\transforms\f5f1e9365512dd218390483940b438ee\transformed\startup-runtime-1.1.1\res
 com.example.jobquestbottomnavigation.app-material-1.12.0-53 C:\Users\user\.gradle\caches\8.11.1\transforms\fc409eb1bc9eda98a2b6869bd4ab2d1e\transformed\material-1.12.0\res
 com.example.jobquestbottomnavigation.app-coordinatorlayout-1.1.0-54 C:\Users\user\.gradle\caches\8.11.1\transforms\fca8dbffc2c74a9f2c5d97330d151488\transformed\coordinatorlayout-1.1.0\res
-com.example.jobquestbottomnavigation.app-pngs-55 C:\Users\user\AndroidStudioProjects\JobQuestBottomNavigation\app\build\generated\res\pngs\debug
-com.example.jobquestbottomnavigation.app-res-56 C:\Users\user\AndroidStudioProjects\JobQuestBottomNavigation\app\build\generated\res\processDebugGoogleServices
-com.example.jobquestbottomnavigation.app-resValues-57 C:\Users\user\AndroidStudioProjects\JobQuestBottomNavigation\app\build\generated\res\resValues\debug
-com.example.jobquestbottomnavigation.app-packageDebugResources-58 C:\Users\user\AndroidStudioProjects\JobQuestBottomNavigation\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.jobquestbottomnavigation.app-packageDebugResources-59 C:\Users\user\AndroidStudioProjects\JobQuestBottomNavigation\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.jobquestbottomnavigation.app-debug-60 C:\Users\user\AndroidStudioProjects\JobQuestBottomNavigation\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.example.jobquestbottomnavigation.app-debug-61 C:\Users\user\AndroidStudioProjects\JobQuestBottomNavigation\app\src\debug\res
-com.example.jobquestbottomnavigation.app-main-62 C:\Users\user\AndroidStudioProjects\JobQuestBottomNavigation\app\src\main\res
+com.example.jobquestbottomnavigation.app-pngs-55 C:\android developer\JobQuest-\JobQuest App\app\build\generated\res\pngs\debug
+com.example.jobquestbottomnavigation.app-res-56 C:\android developer\JobQuest-\JobQuest App\app\build\generated\res\processDebugGoogleServices
+com.example.jobquestbottomnavigation.app-resValues-57 C:\android developer\JobQuest-\JobQuest App\app\build\generated\res\resValues\debug
+com.example.jobquestbottomnavigation.app-packageDebugResources-58 C:\android developer\JobQuest-\JobQuest App\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.jobquestbottomnavigation.app-packageDebugResources-59 C:\android developer\JobQuest-\JobQuest App\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.jobquestbottomnavigation.app-debug-60 C:\android developer\JobQuest-\JobQuest App\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.jobquestbottomnavigation.app-debug-61 C:\android developer\JobQuest-\JobQuest App\app\src\debug\res
+com.example.jobquestbottomnavigation.app-main-62 C:\android developer\JobQuest-\JobQuest App\app\src\main\res
