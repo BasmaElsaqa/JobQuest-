@@ -34,6 +34,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.JobQuestBottomNavigation" >
         <activity
+            android:name="com.example.jobquestbottomnavigation.EditProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.jobquestbottomnavigation.ApplyForPositionActivity"
             android:exported="false" />
         <activity

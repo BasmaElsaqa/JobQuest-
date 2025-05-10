@@ -22,10 +22,12 @@ drawable baseline_visibility_off_24
 drawable checkmark
 drawable developer
 drawable edit_text_bg
+drawable edittext_bg
 drawable google
 drawable google_icon
 drawable home
 drawable ic_baseline_eye_24
+drawable ic_bell
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
@@ -55,6 +57,7 @@ id app_name
 id applied_tv
 id applied_tv2
 id applying_position
+id btnSave
 id btn_apply_now
 id btn_company
 id btn_job_seeker
@@ -67,6 +70,8 @@ id create_account
 id create_account_btn
 id description
 id dev_ic
+id editDate
+id editTitle
 id email_text
 id etEmail
 id etPassword
@@ -93,6 +98,7 @@ id navigation_jobs
 id navigation_profile
 id navigation_saved
 id navigation_track
+id notifications_list
 id offers_tv
 id offers_tv2
 id or_divider
@@ -106,6 +112,7 @@ id rv
 id salaryRange
 id save_for_later_btn
 id savedDate
+id search_bar
 id search_jobs_btn
 id signup
 id status_tabs
@@ -118,6 +125,7 @@ id view_pager
 id welcome_text
 layout activity_account_created
 layout activity_apply_for_position
+layout activity_edit_profile
 layout activity_job_details
 layout activity_landing_page
 layout activity_login
@@ -127,14 +135,19 @@ layout fragment_applied
 layout fragment_home
 layout fragment_interviewing
 layout fragment_jobs
+layout fragment_notifications
 layout fragment_offer
 layout fragment_profile
 layout fragment_rejected
+layout fragment_reminders
 layout fragment_saved
+layout fragment_settings
 layout fragment_track
+layout item_notification
 layout item_saved_job
 layout jobs_item_list
 layout reacent_activity_item_list
+layout reminder_item_list
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground

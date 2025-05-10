@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.databinding:viewbinding:8.9.1] C:\Users\user\.gradle\caches\8.11.1\transforms\e48b7e58864ececda2fc2caffea82229\transformed\viewbinding-8.9.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.9] C:\Users\user\.gradle\caches\8.11.1\transforms\bd54814ed8d4c1ed301a12b6e593c941\transformed\navigation-common-2.8.9\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.8.9] C:\Users\user\.gradle\caches\8.11.1\transforms\1fa5f757f8e5056113d6579b7e3c0ea7\transformed\navigation-common-ktx-2.8.9\AndroidManifest.xml:2:1-7:12
@@ -107,8 +107,8 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\user\.gradl
 	android:name
 		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:7:5-48:19
-INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:7:5-48:19
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:7:5-51:19
+INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:7:5-51:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\user\.gradle\caches\8.11.1\transforms\fc409eb1bc9eda98a2b6869bd4ab2d1e\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\user\.gradle\caches\8.11.1\transforms\fc409eb1bc9eda98a2b6869bd4ab2d1e\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\user\.gradle\caches\8.11.1\transforms\4bdcd9e6ae11c704c431aca36ecc3d2f\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -177,64 +177,70 @@ MERGED from [com.google.android.play:core-common:2.0.3] C:\Users\user\.gradle\ca
 		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:15:9-62
 	android:dataExtractionRules
 		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:9:9-65
-activity#com.example.jobquestbottomnavigation.ApplyForPositionActivity
+activity#com.example.jobquestbottomnavigation.EditProfileActivity
 ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:18:13-53
-activity#com.example.jobquestbottomnavigation.JobDetailsActivity
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:18:13-48
+activity#com.example.jobquestbottomnavigation.ApplyForPositionActivity
 ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:21:13-47
-activity#com.example.jobquestbottomnavigation.AccountCreatedActivity
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:21:13-53
+activity#com.example.jobquestbottomnavigation.JobDetailsActivity
 ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:24:13-51
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:24:13-47
+activity#com.example.jobquestbottomnavigation.AccountCreatedActivity
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:26:9-28:40
+	android:exported
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:27:13-51
 activity#com.example.jobquestbottomnavigation.LandingPageActivity
-ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:26:9-34:20
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:29:9-37:20
 	android:exported
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:28:13-36
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:31:13-36
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:27:13-48
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:30:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:35:27-74
 activity#com.example.jobquestbottomnavigation.MainActivity
-ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:35:9-37:40
-	android:exported
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:37:13-37
-	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:36:13-41
-activity#com.example.jobquestbottomnavigation.SignUpActivity
 ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
 		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:39:13-43
-activity#com.example.jobquestbottomnavigation.LoginActivity
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:39:13-41
+activity#com.example.jobquestbottomnavigation.SignUpActivity
 ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
 		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:42:13-42
-meta-data#preloaded_fonts
-ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:45:9-47:57
-	android:resource
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:47:13-54
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:42:13-43
+activity#com.example.jobquestbottomnavigation.LoginActivity
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:44:9-46:40
+	android:exported
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:46:13-43
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:45:13-42
+meta-data#preloaded_fonts
+ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:48:9-50:57
+	android:resource
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:50:13-54
+	android:name
+		ADDED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml:49:13-43
 uses-sdk
 INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\android developer\JobQuest-\JobQuest App\app\src\main\AndroidManifest.xml
