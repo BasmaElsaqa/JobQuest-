@@ -86,10 +86,14 @@ animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
 array assume_strong_biometrics_models
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
 array crypto_fingerprint_fallback_prefixes
 array crypto_fingerprint_fallback_vendors
 array delay_showing_prompt_models
 array hide_fingerprint_instantly_prefixes
+array preloaded_fonts
 attr SharedValue
 attr SharedValueId
 attr action
@@ -1461,6 +1465,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color dark_gray
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1510,6 +1515,7 @@ color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
+color light_gray
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2109,6 +2115,7 @@ color material_timepicker_button_stroke
 color material_timepicker_clock_text_color
 color material_timepicker_clockface
 color material_timepicker_modebutton_tint
+color medium_gray
 color mtrl_btn_bg_color_selector
 color mtrl_btn_ripple_color
 color mtrl_btn_stroke_color_selector
@@ -2174,9 +2181,6 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color purple_200
-color purple_500
-color purple_700
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -3087,6 +3091,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable backarrow
 drawable baseline_email_24
+drawable baseline_perm_identity_24
 drawable baseline_visibility_off_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3123,6 +3128,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable developer
 drawable edit_text_bg
+drawable edittext_bg
 drawable fingerprint_dialog_error
 drawable fingerprint_dialog_fp_icon
 drawable google
@@ -3131,6 +3137,8 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable home
 drawable ic_arrow_back_black_24
+drawable ic_baseline_eye_24
+drawable ic_bell
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3162,6 +3170,7 @@ drawable jobs
 drawable linkedin
 drawable lock
 drawable logo_background_rounded
+drawable logo_white
 drawable logograybg
 drawable logowithblackbg
 drawable m3_avd_hide_password
@@ -3249,6 +3258,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable track
 drawable whitelogo
+font inter
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3364,6 +3374,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnSave
 id btn_apply_now
 id btn_company
 id btn_job_seeker
@@ -3449,6 +3460,8 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editDate
+id editTitle
 id edit_query
 id edit_text_id
 id elastic
@@ -3605,6 +3618,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_text
 id nav_controller_view_tag
 id nav_host_fragment_activity_main
 id nav_host_fragment_container
@@ -3632,6 +3646,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notifications_list
 id off
 id offers_tv
 id offers_tv2
@@ -3724,7 +3739,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id show_password_checkbox
 id signup
 id sin
 id skipCollapsed
@@ -3799,6 +3813,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toggleConfirmPasswordVisibility
 id togglePasswordVisibility
 id top
 id topPanel
@@ -3961,6 +3976,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_account_created
 layout activity_apply_for_position
+layout activity_edit_profile
 layout activity_job_details
 layout activity_landing_page
 layout activity_login
@@ -3989,13 +4005,17 @@ layout fragment_applied
 layout fragment_home
 layout fragment_interviewing
 layout fragment_jobs
+layout fragment_notifications
 layout fragment_offer
 layout fragment_profile
 layout fragment_rejected
+layout fragment_reminders
 layout fragment_saved
+layout fragment_settings
 layout fragment_track
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_notification
 layout item_saved_job
 layout jobs_item_list
 layout m3_alert_dialog
@@ -4056,6 +4076,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout reacent_activity_item_list
+layout reminder_item_list
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

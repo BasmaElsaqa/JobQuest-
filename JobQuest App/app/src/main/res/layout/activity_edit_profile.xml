@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 1. Personal Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile"
+                    android:contentDescription="Profile Image" />
+
+                <EditText android:hint="Full Name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Headline / Title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Email" android:inputType="textEmailAddress" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Phone Number" android:inputType="phone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Location (City, Country)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="Save Personal Info"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:backgroundTint="@color/black"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 2. Skills Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Skills"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText android:hint="Add Skill" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="Save Skills"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:backgroundTint="@color/black"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 3. Education Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Education"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText android:hint="Degree" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Institution" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Start Date" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="End Date" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="Add Education"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 4. Experience Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Experience"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText android:hint="Job Title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Company Name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Start Date" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="End Date" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <EditText android:hint="Description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="Add Experience"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:backgroundTint="@color/black"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Final Save Button -->
+        <Button
+            android:text="Save All Changes"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

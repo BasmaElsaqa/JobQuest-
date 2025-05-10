@@ -22,7 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         val navView: BottomNavigationView = binding.navView
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        val navController = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main)
+            ?.let { it as androidx.navigation.fragment.NavHostFragment }
+            ?.navController
+            ?: throw IllegalStateException("NavController not found")
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(

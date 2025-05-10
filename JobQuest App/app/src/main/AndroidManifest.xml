@@ -15,6 +15,9 @@
         android:theme="@style/Theme.JobQuestBottomNavigation"
         tools:targetApi="31">
         <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".ApplyForPositionActivity"
             android:exported="false" />
         <activity

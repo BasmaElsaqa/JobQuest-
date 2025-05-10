@@ -4,8 +4,8 @@ package com.example.jobquestbottomnavigation.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -39,6 +39,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final EditText emailText;
 
   @NonNull
+  public final EditText nameText;
+
+  @NonNull
   public final EditText passwordText;
 
   @NonNull
@@ -48,23 +51,29 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final EditText repassword;
 
   @NonNull
-  public final CheckBox showPasswordCheckbox;
+  public final ImageView toggleConfirmPasswordVisibility;
+
+  @NonNull
+  public final ImageView togglePasswordVisibility;
 
   private ActivitySignUpBinding(@NonNull ScrollView rootView, @NonNull TextView alreadyUser,
       @NonNull MaterialButton btnCompany, @NonNull MaterialButton btnJobSeeker,
-      @NonNull MaterialButton btnSignup, @NonNull EditText emailText,
+      @NonNull MaterialButton btnSignup, @NonNull EditText emailText, @NonNull EditText nameText,
       @NonNull EditText passwordText, @NonNull ProgressBar progressBar,
-      @NonNull EditText repassword, @NonNull CheckBox showPasswordCheckbox) {
+      @NonNull EditText repassword, @NonNull ImageView toggleConfirmPasswordVisibility,
+      @NonNull ImageView togglePasswordVisibility) {
     this.rootView = rootView;
     this.alreadyUser = alreadyUser;
     this.btnCompany = btnCompany;
     this.btnJobSeeker = btnJobSeeker;
     this.btnSignup = btnSignup;
     this.emailText = emailText;
+    this.nameText = nameText;
     this.passwordText = passwordText;
     this.progressBar = progressBar;
     this.repassword = repassword;
-    this.showPasswordCheckbox = showPasswordCheckbox;
+    this.toggleConfirmPasswordVisibility = toggleConfirmPasswordVisibility;
+    this.togglePasswordVisibility = togglePasswordVisibility;
   }
 
   @Override
@@ -124,6 +133,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.name_text;
+      EditText nameText = ViewBindings.findChildViewById(rootView, id);
+      if (nameText == null) {
+        break missingId;
+      }
+
       id = R.id.password_text;
       EditText passwordText = ViewBindings.findChildViewById(rootView, id);
       if (passwordText == null) {
@@ -142,14 +157,21 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.show_password_checkbox;
-      CheckBox showPasswordCheckbox = ViewBindings.findChildViewById(rootView, id);
-      if (showPasswordCheckbox == null) {
+      id = R.id.toggleConfirmPasswordVisibility;
+      ImageView toggleConfirmPasswordVisibility = ViewBindings.findChildViewById(rootView, id);
+      if (toggleConfirmPasswordVisibility == null) {
+        break missingId;
+      }
+
+      id = R.id.togglePasswordVisibility;
+      ImageView togglePasswordVisibility = ViewBindings.findChildViewById(rootView, id);
+      if (togglePasswordVisibility == null) {
         break missingId;
       }
 
       return new ActivitySignUpBinding((ScrollView) rootView, alreadyUser, btnCompany, btnJobSeeker,
-          btnSignup, emailText, passwordText, progressBar, repassword, showPasswordCheckbox);
+          btnSignup, emailText, nameText, passwordText, progressBar, repassword,
+          toggleConfirmPasswordVisibility, togglePasswordVisibility);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
