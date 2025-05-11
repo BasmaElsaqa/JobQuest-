@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.example.jobquestbottomnavigation.R
 import com.example.jobquestbottomnavigation.StatusPagerAdapter
+import com.example.jobquestbottomnavigation.StatusPagerAdapter2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -20,12 +21,12 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_track, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
         viewPager = view.findViewById(R.id.view_pager)
         tabLayout = view.findViewById(R.id.status_tabs)
 
-        val adapter = StatusPagerAdapter(this)
+        val adapter = StatusPagerAdapter2(this)
         viewPager.adapter = adapter
 
         val tabTitles = listOf("Reminders", "Notifications", "Settings")

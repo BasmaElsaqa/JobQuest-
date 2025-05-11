@@ -1,6 +1,7 @@
 package com.example.jobquestbottomnavigation
 
 import android.os.Bundle
+import com.google.firebase.FirebaseApp
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        FirebaseApp.initializeApp(this)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
