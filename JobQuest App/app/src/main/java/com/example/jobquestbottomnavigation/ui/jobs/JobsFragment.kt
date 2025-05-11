@@ -2,6 +2,7 @@ package com.example.jobquestbottomnavigation.ui.jobs
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,21 +12,20 @@ import com.example.jobquestbottomnavigation.Job
 import com.example.jobquestbottomnavigation.JobDetailsActivity
 import com.example.jobquestbottomnavigation.JobsAdapter
 import com.example.jobquestbottomnavigation.databinding.FragmentJobsBinding
-import com.google.firebase.database.*
+import com.google.firebase.firestore.FirebaseFirestore
 
 class JobsFragment : Fragment() {
 
     private lateinit var binding: FragmentJobsBinding
     private lateinit var jobList: ArrayList<Job>
     private lateinit var adapter: JobsAdapter
-    private lateinit var databaseReference: DatabaseReference
+    private lateinit var firestore: FirebaseFirestore
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentJobsBinding.inflate(inflater, container, false)
-
 
         jobList = ArrayList()
         adapter = JobsAdapter(jobList) { selectedJob ->
@@ -44,27 +44,26 @@ class JobsFragment : Fragment() {
         binding.rv.layoutManager = LinearLayoutManager(requireContext())
         binding.rv.adapter = adapter
 
-        fetchJobsFromFirebase()
+        fetchJobsFromFirestore()
 
         return binding.root
     }
 
-    private fun fetchJobsFromFirebase() {
-        databaseReference = FirebaseDatabase.getInstance().getReference("Jobs")
-
-        databaseReference.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
+    private fun fetchJobsFromFirestore() {
+        firestore = FirebaseFirestore.getInstance()
+        firestore.collection("jobs")
+            .get()
+            .addOnSuccessListener { result ->
                 jobList.clear()
-                for (jobSnapshot in snapshot.children) {
-                    val job = jobSnapshot.getValue(Job::class.java)
-                    job?.let { jobList.add(it) }
+                for (document in result) {
+                    val job = document.toObject(Job::class.java)
+                    jobList.add(job)
                 }
                 adapter.notifyDataSetChanged()
+                Log.d("Firestore", "Loaded ${jobList.size} jobs")
             }
-
-            override fun onCancelled(error: DatabaseError) {
-                // Log or handle the error if needed
+            .addOnFailureListener { exception ->
+                Log.e("FirestoreError", "Failed to fetch jobs", exception)
             }
-        })
     }
 }
