@@ -35,10 +35,15 @@ class SignUpActivity : AppCompatActivity() {
         val passwordText = findViewById<EditText>(R.id.password_text)
         val confirmPasswordText = findViewById<EditText>(R.id.repassword)
         val signUpButton = findViewById<Button>(R.id.btn_signup)
+        val backBtn= findViewById<ImageView>(R.id.back_btn)
         nameInput = findViewById(R.id.name_text)
         progress = findViewById(R.id.progress_bar)
         val alreadyUser: TextView = findViewById(R.id.already_user)
 
+        backBtn.setOnClickListener {
+            startActivity(Intent(this, LandingPageActivity::class.java))
+            finish()
+        }
         toggle.setOnClickListener {
             isPasswordVisible = !isPasswordVisible
             passwordText.inputType = if (isPasswordVisible) {

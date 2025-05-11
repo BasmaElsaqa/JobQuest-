@@ -7,7 +7,8 @@ data class Job(
     var location: String? = "",
     var description: String? = "",
     var requirements:String? ="",
-    var benefits: String? =""
+    var benefits: String? ="",
+    var isSaved: Boolean = false
 
 )
 

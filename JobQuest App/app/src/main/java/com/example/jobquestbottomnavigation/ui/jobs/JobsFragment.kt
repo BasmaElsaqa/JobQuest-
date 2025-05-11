@@ -12,6 +12,7 @@ import com.example.jobquestbottomnavigation.Job
 import com.example.jobquestbottomnavigation.JobDetailsActivity
 import com.example.jobquestbottomnavigation.JobsAdapter
 import com.example.jobquestbottomnavigation.databinding.FragmentJobsBinding
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
 class JobsFragment : Fragment() {
@@ -21,11 +22,13 @@ class JobsFragment : Fragment() {
     private lateinit var adapter: JobsAdapter
     private lateinit var firestore: FirebaseFirestore
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentJobsBinding.inflate(inflater, container, false)
+
 
         jobList = ArrayList()
         adapter = JobsAdapter(jobList) { selectedJob ->
@@ -51,19 +54,33 @@ class JobsFragment : Fragment() {
 
     private fun fetchJobsFromFirestore() {
         firestore = FirebaseFirestore.getInstance()
-        firestore.collection("jobs")
-            .get()
-            .addOnSuccessListener { result ->
-                jobList.clear()
-                for (document in result) {
-                    val job = document.toObject(Job::class.java)
-                    jobList.add(job)
+        val userId = FirebaseAuth.getInstance().currentUser?.uid
+
+        // Fetch saved jobs first
+        val savedJobsMap = mutableSetOf<String>()
+
+        if (userId != null) {
+            firestore.collection("users").document(userId).collection("savedJobs")
+                .get().addOnSuccessListener { savedResult ->
+                    for (doc in savedResult) {
+                        val savedJob = doc.toObject(Job::class.java)
+                        savedJobsMap.add("${savedJob.title}_${savedJob.company}")
+                    }
+
+                    // Fetch all jobs
+                    firestore.collection("jobs").get()
+                        .addOnSuccessListener { result ->
+                            jobList.clear()
+                            for (document in result) {
+                                val job = document.toObject(Job::class.java)
+                                val key = "${job.title}_${job.company}"
+                                job.isSaved = savedJobsMap.contains(key)
+                                jobList.add(job)
+                            }
+                            adapter.notifyDataSetChanged()
+                        }
                 }
-                adapter.notifyDataSetChanged()
-                Log.d("Firestore", "Loaded ${jobList.size} jobs")
-            }
-            .addOnFailureListener { exception ->
-                Log.e("FirestoreError", "Failed to fetch jobs", exception)
-            }
+        }
     }
+
 }
