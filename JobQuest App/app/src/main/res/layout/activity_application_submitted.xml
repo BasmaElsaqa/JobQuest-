@@ -60,7 +60,7 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_btn"
+        android:id="@+id/submitted_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Search for more jobs"

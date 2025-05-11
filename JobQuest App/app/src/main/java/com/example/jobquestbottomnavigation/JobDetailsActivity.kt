@@ -12,6 +12,8 @@ import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
 import android.widget.Button
 import com.google.android.material.button.MaterialButton
+import android.widget.ImageView
+
 
 class JobDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,6 +63,12 @@ class JobDetailsActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+
+        val backArrow = findViewById<ImageView>(R.id.back_arrow)
+        backArrow.setOnClickListener {
+            finish() // Goes back to the previous activity
+        }
+
 
     }
 }

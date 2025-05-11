@@ -14,7 +14,7 @@
         android:layout_height="49dp"
         android:background="@drawable/header_stroke"
         android:elevation="2dp"
-        android:paddingHorizontal="5dp"
+        android:paddingHorizontal="2dp"
         >
 
         <TextView
@@ -25,8 +25,16 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#000000"
-            android:layout_marginBottom="16dp"
+
             android:layout_gravity="center"/>
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="start"
+            android:src="@drawable/longarrow" />
     </androidx.appcompat.widget.Toolbar>
 
     <!-- Scrollable Content -->
