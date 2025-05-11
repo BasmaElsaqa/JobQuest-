@@ -5,10 +5,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.jobquestbottomnavigation.ui.profile.NotificationsFragment
 import com.example.jobquestbottomnavigation.ui.profile.RemindersFragment
 import com.example.jobquestbottomnavigation.ui.profile.SettingsFragment
-import com.example.jobquestbottomnavigation.ui.track.AppliedFragment
-import com.example.jobquestbottomnavigation.ui.track.InterviewingFragment
-import com.example.jobquestbottomnavigation.ui.track.OfferFragment
-import com.example.jobquestbottomnavigation.ui.track.RejectedFragment
 
 class StatusPagerAdapter2(fragment: Fragment) : FragmentStateAdapter(fragment) {
 
