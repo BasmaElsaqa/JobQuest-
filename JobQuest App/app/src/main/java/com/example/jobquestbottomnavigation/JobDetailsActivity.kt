@@ -2,6 +2,7 @@ package com.example.jobquestbottomnavigation
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -13,6 +14,11 @@ class JobDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_job_details)
+
+        // ✅ Hide the ActionBar and go fullscreen
+        supportActionBar?.hide()
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+
 
         val title = intent.getStringExtra("title") ?: ""
         val company = intent.getStringExtra("company") ?: ""
