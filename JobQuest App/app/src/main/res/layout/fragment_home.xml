@@ -32,7 +32,6 @@
             android:textSize="14sp" />
 
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -253,55 +252,35 @@
             android:weightSum="2">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/search_jobs_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
+                android:backgroundTint="@color/white"
                 android:gravity="center"
                 android:text="Search Jobs"
                 android:textColor="@color/black"
                 android:textSize="16dp"
-                android:backgroundTint="@color/white"
                 card_view:cornerRadius="6dp"
                 card_view:icon="@drawable/searchicon"
                 card_view:iconTint="@color/black" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/saved_jobs_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="@color/white"
                 android:gravity="center"
                 android:text="Saved Jobs"
                 android:textColor="@color/black"
                 android:textSize="16dp"
-                android:backgroundTint="@color/white"
                 card_view:cornerRadius="6dp"
                 card_view:icon="@drawable/saved_icon"
                 card_view:iconTint="@color/white"
                 card_view:iconTintMode="multiply" />
         </LinearLayout>
-
-        <!-- Recent Activity -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Recent Activity"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                card_view:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/reacent_activity_item_list" />
-        </FrameLayout>
-
 
     </LinearLayout>
 </ScrollView>

@@ -1,5 +1,6 @@
 package com.example.jobquestbottomnavigation.ui.saved
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +9,9 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.jobquestbottomnavigation.ApplyForPositionActivity
 import com.example.jobquestbottomnavigation.Job
+import com.example.jobquestbottomnavigation.JobDetailsActivity
 import com.example.jobquestbottomnavigation.R
 import com.example.jobquestbottomnavigation.SavedAdapter
 import com.google.firebase.auth.FirebaseAuth
@@ -32,9 +35,17 @@ class SavedFragment : Fragment() {
         recyclerView = view.findViewById(R.id.recyclerSavedJobs)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        adapter = SavedAdapter(savedJobs) { job ->
-            // Optional: Handle item click (e.g., navigate to job detail)
-            Toast.makeText(requireContext(), "Clicked: ${job.title}", Toast.LENGTH_SHORT).show()
+        adapter = SavedAdapter(savedJobs) { selectedJob ->
+            val intent = Intent(requireContext(), JobDetailsActivity::class.java).apply {
+                putExtra("title", selectedJob.title)
+                putExtra("company", selectedJob.company)
+                putExtra("salary", selectedJob.salary)
+                putExtra("location", selectedJob.location)
+                putExtra("description", selectedJob.description)
+                putExtra("requirements", selectedJob.requirements)
+                putExtra("benefits", selectedJob.benefits)
+            }
+            startActivity(intent)
         }
 
         recyclerView.adapter = adapter
