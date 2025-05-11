@@ -1,6 +1,7 @@
 package com.example.jobquestbottomnavigation
 
 import android.os.Bundle
+import android.view.View
 import com.google.firebase.FirebaseApp
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // ✅ This hides the ActionBar
+        supportActionBar?.hide()
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+
         super.onCreate(savedInstanceState)
 
         FirebaseApp.initializeApp(this)
@@ -37,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_profile, R.id.navigation_saved,R.id.navigation_jobs,R.id.navigation_track
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
 }
