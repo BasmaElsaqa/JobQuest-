@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="#F6F6F6">
 
     <!-- Page Header -->
     <androidx.appcompat.widget.Toolbar
@@ -25,6 +25,14 @@
             android:textColor="#000000"
             android:layout_gravity="center"
             android:fontFamily="@font/inter"/>
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="start"
+            android:src="@drawable/longarrow" />
     </androidx.appcompat.widget.Toolbar>
 
     <!-- Scrollable Content -->
@@ -76,10 +84,10 @@
                     android:textSize="12sp"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
-                    android:backgroundTint="#88B428"
                     android:paddingVertical="4dp"
                     android:paddingHorizontal="12dp"
-                    android:layout_marginEnd="8dp" />
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/dark_gray"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -88,10 +96,10 @@
                     android:textSize="12sp"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
-                    android:backgroundTint="#88B428"
                     android:paddingVertical="4dp"
                     android:paddingHorizontal="12dp"
-                    android:layout_marginEnd="8dp" />
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/dark_gray"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,9 +108,9 @@
                     android:textSize="12sp"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
-                    android:backgroundTint="#88B428"
                     android:paddingVertical="4dp"
-                    android:paddingHorizontal="12dp" />
+                    android:paddingHorizontal="12dp"
+                    android:background="@color/dark_gray"/>
             </LinearLayout>
 
             <!-- Posted Info -->
@@ -174,17 +182,44 @@
                 android:textSize="14sp"
                 android:layout_marginBottom="32dp" />
 
-            <!-- Apply Now Button -->
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_apply_now"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Apply Now"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#000000"
-                app:cornerRadius="12dp"
-                android:padding="14dp"
-                android:layout_marginTop="16dp" />
+
         </LinearLayout>
     </ScrollView>
+
+    <!-- Fixed Apply Now bar at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:divider="@drawable/top_stroke"
+        android:showDividers="beginning"
+        android:gravity="center_vertical">
+
+        <!-- Apply Now button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_apply_now"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Apply Now"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
+            app:cornerRadius="12dp"
+            android:paddingVertical="14dp"/>
+
+        <!-- Bookmark icon -->
+        <ImageView
+            android:id="@+id/bookmark_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/saved_icon"
+            android:contentDescription="Save"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bookmark_button_bg"
+            android:padding="12dp"/>
+    </LinearLayout>
+
 </LinearLayout>

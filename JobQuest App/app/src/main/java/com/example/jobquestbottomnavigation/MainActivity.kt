@@ -44,5 +44,12 @@ class MainActivity : AppCompatActivity() {
         )
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        // Handle navigation intent to a specific fragment
+        val destination = intent.getStringExtra("navigateTo")
+        if (destination == "navigation_jobs") {
+            binding.navView.selectedItemId = R.id.navigation_jobs
+        }
     }
+
 }
