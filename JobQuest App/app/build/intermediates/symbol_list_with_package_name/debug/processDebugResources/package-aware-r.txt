@@ -3121,6 +3121,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable delete
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3152,6 +3153,7 @@ drawable ic_home_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3403,6 +3405,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id company
 id companyName
 id company_name
 id compress
@@ -3534,9 +3537,13 @@ id italic
 id item_touch_helper_previous_elevation
 id jobTitle
 id jobType
+id job_benefits
 id job_description
+id job_location
+id job_requirements
 id job_title
 id job_title_input
+id job_type
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3706,6 +3713,7 @@ id rounded
 id row_index_key
 id rtl
 id rv
+id salary
 id salaryRange
 id save_for_later_btn
 id save_non_transition_alpha
@@ -3792,6 +3800,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id tags_container
 id text
 id text2
 id textEnd

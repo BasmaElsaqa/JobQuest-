@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_activity_apply_for_position.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_apply_for_position.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_ic_notifications_black_24dp.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_activity_apply_for_position.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_apply_for_position.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_track.xml.flat",
@@ -16,6 +16,10 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\home.xml"
     },
     {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_fragment_notifications.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_notifications.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_fragment_jobs.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_jobs.xml"
     },
@@ -24,16 +28,24 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\edit_text_bg.xml"
     },
     {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_reminder_item_list.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\reminder_item_list.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_login.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_logowithblackbg.png.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\logowithblackbg.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_edit_profile.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -42,10 +54,6 @@
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_profile.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\profile.xml"
-    },
-    {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/drawable_edittext_bg.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/drawable/edittext_bg.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_ic_launcher_foreground.xml.flat",
@@ -68,16 +76,12 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_job_details.xml"
     },
     {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/drawable_ic_bell.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/drawable/ic_bell.xml"
-    },
-    {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_fragment_notifications.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_notifications.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_fragment_jobs.xml.flat",
+        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_jobs.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
@@ -120,16 +124,20 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\baseline_email_24.xml"
     },
     {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_jobs_item_list.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/jobs_item_list.xml"
-    },
-    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_google.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\google.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_logograybg.png.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\logograybg.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\ic_logout.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\navigation_mobile_navigation.xml.flat",
@@ -144,8 +152,16 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_delete.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\delete.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_whitelogo.png.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\whitelogo.png"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_fragment_reminders.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_reminders.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_baseline_visibility_off_24.xml.flat",
@@ -166,10 +182,6 @@
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_fragment_saved.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\fragment_saved.xml"
-    },
-    {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_activity_edit_profile.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/activity_edit_profile.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\xml_backup_rules.xml.flat",
@@ -196,6 +208,10 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\item_saved_job.xml"
     },
     {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_edittext_bg.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\edittext_bg.xml"
+    },
+    {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_searchicon.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\searchicon.xml"
     },
@@ -208,16 +224,8 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_account_created.xml"
     },
     {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_reacent_activity_item_list.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/reacent_activity_item_list.xml"
-    },
-    {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_fragment_settings.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_settings.xml"
-    },
-    {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_item_notification.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/item_notification.xml"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_item_notification.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\item_notification.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_google_icon.png.flat",
@@ -232,16 +240,16 @@
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_reminder_item_list.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/reminder_item_list.xml"
-    },
-    {
-        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_ic_bell.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\drawable\\ic_bell.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_reacent_activity_item_list.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\reacent_activity_item_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_logo_background_rounded.xml.flat",
@@ -262,10 +270,6 @@
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
-    },
-    {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_fragment_profile.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_profile.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_applied_icon.xml.flat",
@@ -326,10 +330,6 @@
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-main-62:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.example.jobquestbottomnavigation.app-debug-60:/layout_fragment_reminders.xml.flat",
-        "source": "com.example.jobquestbottomnavigation.app-main-62:/layout/fragment_reminders.xml"
     },
     {
         "merged": "C:\\Users\\user\\.gradle\\daemon\\8.11.1\\com.example.jobquestbottomnavigation.app-debug-60:\\drawable_backarrow.xml.flat",

@@ -4,6 +4,7 @@ package com.example.jobquestbottomnavigation.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -27,23 +28,50 @@ public final class ActivityJobDetailsBinding implements ViewBinding {
   public final TextView companyName;
 
   @NonNull
+  public final TextView jobBenefits;
+
+  @NonNull
   public final TextView jobDescription;
+
+  @NonNull
+  public final TextView jobLocation;
+
+  @NonNull
+  public final TextView jobRequirements;
 
   @NonNull
   public final TextView jobTitle;
 
   @NonNull
+  public final TextView jobType;
+
+  @NonNull
   public final ScrollView main;
+
+  @NonNull
+  public final TextView salary;
+
+  @NonNull
+  public final LinearLayout tagsContainer;
 
   private ActivityJobDetailsBinding(@NonNull ScrollView rootView,
       @NonNull MaterialButton btnApplyNow, @NonNull TextView companyName,
-      @NonNull TextView jobDescription, @NonNull TextView jobTitle, @NonNull ScrollView main) {
+      @NonNull TextView jobBenefits, @NonNull TextView jobDescription,
+      @NonNull TextView jobLocation, @NonNull TextView jobRequirements, @NonNull TextView jobTitle,
+      @NonNull TextView jobType, @NonNull ScrollView main, @NonNull TextView salary,
+      @NonNull LinearLayout tagsContainer) {
     this.rootView = rootView;
     this.btnApplyNow = btnApplyNow;
     this.companyName = companyName;
+    this.jobBenefits = jobBenefits;
     this.jobDescription = jobDescription;
+    this.jobLocation = jobLocation;
+    this.jobRequirements = jobRequirements;
     this.jobTitle = jobTitle;
+    this.jobType = jobType;
     this.main = main;
+    this.salary = salary;
+    this.tagsContainer = tagsContainer;
   }
 
   @Override
@@ -85,9 +113,27 @@ public final class ActivityJobDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.job_benefits;
+      TextView jobBenefits = ViewBindings.findChildViewById(rootView, id);
+      if (jobBenefits == null) {
+        break missingId;
+      }
+
       id = R.id.job_description;
       TextView jobDescription = ViewBindings.findChildViewById(rootView, id);
       if (jobDescription == null) {
+        break missingId;
+      }
+
+      id = R.id.job_location;
+      TextView jobLocation = ViewBindings.findChildViewById(rootView, id);
+      if (jobLocation == null) {
+        break missingId;
+      }
+
+      id = R.id.job_requirements;
+      TextView jobRequirements = ViewBindings.findChildViewById(rootView, id);
+      if (jobRequirements == null) {
         break missingId;
       }
 
@@ -97,10 +143,29 @@ public final class ActivityJobDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.job_type;
+      TextView jobType = ViewBindings.findChildViewById(rootView, id);
+      if (jobType == null) {
+        break missingId;
+      }
+
       ScrollView main = (ScrollView) rootView;
 
+      id = R.id.salary;
+      TextView salary = ViewBindings.findChildViewById(rootView, id);
+      if (salary == null) {
+        break missingId;
+      }
+
+      id = R.id.tags_container;
+      LinearLayout tagsContainer = ViewBindings.findChildViewById(rootView, id);
+      if (tagsContainer == null) {
+        break missingId;
+      }
+
       return new ActivityJobDetailsBinding((ScrollView) rootView, btnApplyNow, companyName,
-          jobDescription, jobTitle, main);
+          jobBenefits, jobDescription, jobLocation, jobRequirements, jobTitle, jobType, main,
+          salary, tagsContainer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

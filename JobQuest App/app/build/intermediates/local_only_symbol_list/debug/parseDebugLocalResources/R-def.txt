@@ -20,6 +20,7 @@ drawable baseline_email_24
 drawable baseline_perm_identity_24
 drawable baseline_visibility_off_24
 drawable checkmark
+drawable delete
 drawable developer
 drawable edit_text_bg
 drawable edittext_bg
@@ -32,6 +33,7 @@ drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logout
 drawable ic_notifications_black_24dp
 drawable interviweing
 drawable jobs
@@ -63,6 +65,7 @@ id btn_company
 id btn_job_seeker
 id btn_signup
 id cancel_btn
+id company
 id companyName
 id company_name
 id container
@@ -81,9 +84,13 @@ id interviewing_tv
 id interviewing_tv2
 id jobTitle
 id jobType
+id job_benefits
 id job_description
+id job_location
+id job_requirements
 id job_title
 id job_title_input
+id job_type
 id locationType
 id location_input
 id login_btn
@@ -109,6 +116,7 @@ id rejected_tv
 id rejected_tv2
 id repassword
 id rv
+id salary
 id salaryRange
 id save_for_later_btn
 id savedDate
@@ -117,6 +125,7 @@ id search_jobs_btn
 id signup
 id status_tabs
 id submit_btn
+id tags_container
 id title
 id toggleConfirmPasswordVisibility
 id togglePasswordVisibility

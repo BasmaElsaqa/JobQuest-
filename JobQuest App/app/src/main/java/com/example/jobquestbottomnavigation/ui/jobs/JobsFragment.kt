@@ -26,6 +26,7 @@ class JobsFragment : Fragment() {
     ): View {
         binding = FragmentJobsBinding.inflate(inflater, container, false)
 
+
         jobList = ArrayList()
         adapter = JobsAdapter(jobList) { selectedJob ->
             val intent = Intent(requireContext(), JobDetailsActivity::class.java).apply {
