@@ -29,6 +29,8 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar?.hide()
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
+
+
         auth = FirebaseAuth.getInstance()
 
         // Redirect if already logged in
@@ -45,6 +47,12 @@ class LoginActivity : AppCompatActivity() {
         progress = findViewById(R.id.progress_bar)
         val notUser: TextView = findViewById(R.id.signup)
         val forgetPassword: TextView = findViewById(R.id.forgot_pass)
+        val backBtn= findViewById<ImageView>(R.id.back_btn)
+
+        backBtn.setOnClickListener {
+            startActivity(Intent(this, LandingPageActivity::class.java))
+            finish()
+        }
 
         toggle.setOnClickListener {
             isPasswordVisible = !isPasswordVisible

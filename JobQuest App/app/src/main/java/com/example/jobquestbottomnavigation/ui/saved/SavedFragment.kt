@@ -4,36 +4,68 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.jobquestbottomnavigation.databinding.FragmentSavedBinding
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.jobquestbottomnavigation.Job
+import com.example.jobquestbottomnavigation.R
+import com.example.jobquestbottomnavigation.SavedAdapter
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class SavedFragment : Fragment() {
 
-    private var _binding: FragmentSavedBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var adapter: SavedAdapter
+    private val savedJobs = mutableListOf<Job>()
+
+    private val auth = FirebaseAuth.getInstance()
+    private val firestore = FirebaseFirestore.getInstance()
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_saved, container, false)
+        recyclerView = view.findViewById(R.id.recyclerSavedJobs)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        _binding = FragmentSavedBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        adapter = SavedAdapter(savedJobs) { job ->
+            // Optional: Handle item click (e.g., navigate to job detail)
+            Toast.makeText(requireContext(), "Clicked: ${job.title}", Toast.LENGTH_SHORT).show()
+        }
 
+        recyclerView.adapter = adapter
 
-        return root
+        fetchSavedJobs()
+
+        return view
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    private fun fetchSavedJobs() {
+        val userId = auth.currentUser?.uid
+        if (userId == null) {
+            Toast.makeText(requireContext(), "Not logged in", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        firestore.collection("users")
+            .document(userId)
+            .collection("savedJobs")
+            .get()
+            .addOnSuccessListener { result ->
+                savedJobs.clear()
+                for (doc in result) {
+                    val job = doc.toObject(Job::class.java)
+                    savedJobs.add(job)
+                }
+                adapter.notifyDataSetChanged()
+            }
+            .addOnFailureListener {
+                Toast.makeText(requireContext(), "Failed to load saved jobs", Toast.LENGTH_SHORT).show()
+            }
     }
+
 }
