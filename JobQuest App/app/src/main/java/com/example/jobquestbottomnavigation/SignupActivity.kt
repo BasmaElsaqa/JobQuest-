@@ -9,16 +9,12 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
-import com.example.jobquestbottomnavigation.AccountCreatedActivity
-import com.example.jobquestbottomnavigation.LoginActivity
-import com.example.jobquestbottomnavigation.R
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
 
 class SignUpActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-    private lateinit var database: DatabaseReference
+    private lateinit var firestore: FirebaseFirestore
     private lateinit var progress: ProgressBar
     private lateinit var nameInput: EditText
 
@@ -30,7 +26,7 @@ class SignUpActivity : AppCompatActivity() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         auth = FirebaseAuth.getInstance()
-        database = FirebaseDatabase.getInstance().reference
+        firestore = FirebaseFirestore.getInstance()
 
         var isPasswordVisible = false
         val toggle = findViewById<ImageView>(R.id.togglePasswordVisibility)
@@ -61,7 +57,7 @@ class SignUpActivity : AppCompatActivity() {
             } else {
                 InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
             }
-            toggle.setImageResource(if (isPasswordVisible) R.drawable.ic_baseline_eye_24 else R.drawable.baseline_visibility_off_24)
+            toggle2.setImageResource(if (isPasswordVisible) R.drawable.ic_baseline_eye_24 else R.drawable.baseline_visibility_off_24)
             confirmPasswordText.setSelection(confirmPasswordText.text.length)
         }
 
@@ -113,16 +109,23 @@ class SignUpActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     val userId = auth.currentUser?.uid
                     if (userId != null) {
-                        val userMap = mapOf(
+                        val userMap = hashMapOf(
                             "name" to name,
                             "email" to email
                         )
-                        database.child("users").child(userId).setValue(userMap)
-                    }
 
-                    verifyEmail()
-                    startActivity(Intent(this, AccountCreatedActivity::class.java))
-                    finish()
+                        firestore.collection("users").document(userId)
+                            .set(userMap)
+                            .addOnSuccessListener {
+                                Toast.makeText(this, "User data saved", Toast.LENGTH_SHORT).show()
+                                verifyEmail()
+                                startActivity(Intent(this, AccountCreatedActivity::class.java))
+                                finish()
+                            }
+                            .addOnFailureListener { e ->
+                                Toast.makeText(this, "Firestore error: ${e.message}", Toast.LENGTH_SHORT).show()
+                            }
+                    }
                 } else {
                     Toast.makeText(this, task.exception?.message ?: "Error adding user", Toast.LENGTH_SHORT).show()
                 }
