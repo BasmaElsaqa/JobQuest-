@@ -52,9 +52,16 @@ class JobDetailsActivity : AppCompatActivity() {
         val applyNowButton = findViewById<Button>(R.id.btn_apply_now)
         applyNowButton.setOnClickListener {
             val intent = Intent(this, ApplyForPositionActivity::class.java)
+
+            // Pass data using extras
+            intent.putExtra("title", title)
+            intent.putExtra("company", company)
+            intent.putExtra("location", location)
+            intent.putExtra("salary", salary)
+
             startActivity(intent)
-            finish()
         }
+
     }
 }
 
