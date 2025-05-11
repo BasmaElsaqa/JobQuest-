@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ScrollView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class FragmentJobsBinding implements ViewBinding {
   @NonNull
-  private final ScrollView rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final EditText jobTitleInput;
@@ -37,7 +37,7 @@ public final class FragmentJobsBinding implements ViewBinding {
   @NonNull
   public final TextView welcomeText;
 
-  private FragmentJobsBinding(@NonNull ScrollView rootView, @NonNull EditText jobTitleInput,
+  private FragmentJobsBinding(@NonNull LinearLayout rootView, @NonNull EditText jobTitleInput,
       @NonNull EditText locationInput, @NonNull RecyclerView rv,
       @NonNull MaterialButton searchJobsBtn, @NonNull TextView welcomeText) {
     this.rootView = rootView;
@@ -50,7 +50,7 @@ public final class FragmentJobsBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ScrollView getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -105,7 +105,7 @@ public final class FragmentJobsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentJobsBinding((ScrollView) rootView, jobTitleInput, locationInput, rv,
+      return new FragmentJobsBinding((LinearLayout) rootView, jobTitleInput, locationInput, rv,
           searchJobsBtn, welcomeText);
     }
     String missingId = rootView.getResources().getResourceName(id);
