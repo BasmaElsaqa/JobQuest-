@@ -40,15 +40,12 @@ class JobDetailsActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.job_requirements).text = requirements
         findViewById<TextView>(R.id.job_benefits).text = benefits
 
-        val salaryTag = TextView(this).apply {
-            text = salary
-            setPadding(12, 6, 12, 6)
-            setBackgroundColor(Color.parseColor("#E5E7EB"))
-            setTextColor(Color.BLACK)
-            textSize = 14f
-        }
 
-        findViewById<LinearLayout>(R.id.tags_container).addView(salaryTag)
+        val salaryTag = findViewById<TextView>(R.id.salary_tag)
+        salaryTag.text = salary
+
+        val locationTag=findViewById<TextView>(R.id.location_tag)
+        locationTag.text=location
 
         // 🚀 Navigate to ApplyForPositionActivity
         val applyNowButton = findViewById<Button>(R.id.btn_apply_now)

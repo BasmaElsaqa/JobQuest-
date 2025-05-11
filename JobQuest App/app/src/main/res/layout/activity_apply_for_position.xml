@@ -81,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:text="Location: New York"
                     android:textSize="12sp"
-                    android:textColor="#88B428"
+                    android:textColor="@color/medium_gray"
                     android:layout_marginBottom="3dp" />
 
                 <TextView
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:text="Salary: 80000$ per year"
                     android:textSize="12sp"
-                    android:textColor="#88B428"
+                    android:textColor="@color/medium_gray"
                     android:layout_marginBottom="3dp" />
                 <TextView
 
@@ -100,12 +100,12 @@
                     android:textSize="12sp"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
-                    android:background="#88B428"
+                    android:background="@color/medium_gray"
                     android:paddingVertical="4dp"
                     android:paddingHorizontal="12dp"
                     android:layout_marginBottom="6dp"
                     android:layout_gravity="start"
-                    android:backgroundTint="#88B428"
+                    android:backgroundTint="@color/medium_gray"
                     android:gravity="center" />
             </LinearLayout>
 
