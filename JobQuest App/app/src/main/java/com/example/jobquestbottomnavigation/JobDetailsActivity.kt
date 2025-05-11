@@ -9,6 +9,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
+import android.widget.Button
+import com.google.android.material.button.MaterialButton
 
 class JobDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +47,14 @@ class JobDetailsActivity : AppCompatActivity() {
         }
 
         findViewById<LinearLayout>(R.id.tags_container).addView(salaryTag)
+
+        // 🚀 Navigate to ApplyForPositionActivity
+        val applyNowButton = findViewById<Button>(R.id.btn_apply_now)
+        applyNowButton.setOnClickListener {
+            val intent = Intent(this, ApplyForPositionActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }
 
