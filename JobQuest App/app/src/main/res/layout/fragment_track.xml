@@ -22,7 +22,7 @@
             android:id="@+id/track_page_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jobs Tracking"
+            android:text="Application Tracking"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -54,6 +54,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/status_tabs" />
+        app:layout_constraintTop_toBottomOf="@id/status_tabs"
+        android:background="#F5F5F5"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.saved.SavedFragment"
-    android:background="#FFFFFF">
+    android:background="#F5F5F5">
 
         <!-- Page Header -->
         <androidx.appcompat.widget.Toolbar
@@ -46,7 +46,8 @@
             app:layout_constraintTop_toBottomOf="@id/track_page_header"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            >
 
 
                 <androidx.recyclerview.widget.RecyclerView
