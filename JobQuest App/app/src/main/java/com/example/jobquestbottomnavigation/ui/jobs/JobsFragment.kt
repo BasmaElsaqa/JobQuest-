@@ -1,11 +1,14 @@
 package com.example.jobquestbottomnavigation.ui.jobs
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.jobquestbottomnavigation.Job
@@ -23,18 +26,16 @@ class JobsFragment : Fragment() {
     private lateinit var adapter: JobsAdapter
     private lateinit var firestore: FirebaseFirestore
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentJobsBinding.inflate(inflater, container, false)
 
-        // Back arrow click
+        // Back arrow
         binding.trackPageHeader.findViewById<View>(R.id.back_arrow).setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()
         }
-
 
         jobList = ArrayList()
         adapter = JobsAdapter(jobList) { selectedJob ->
@@ -55,14 +56,49 @@ class JobsFragment : Fragment() {
 
         fetchJobsFromFirestore()
 
+        // Search button click
+        binding.searchJobsBtn.setOnClickListener {
+            performSearch()
+        }
+
+        // Search on "Done" from keyboard
+        binding.locationInput.setOnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
+                performSearch()
+                true
+            } else false
+        }
+
+        binding.jobTitleInput.setOnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
+                performSearch()
+                true
+            } else false
+        }
+
         return binding.root
     }
 
-    private fun fetchJobsFromFirestore() {
+    private fun performSearch() {
+        val titleQuery = binding.jobTitleInput.text.toString().trim()
+        val locationQuery = binding.locationInput.text.toString().trim()
+
+        binding.jobTitleInput.clearFocus()
+        binding.locationInput.clearFocus()
+        hideKeyboard()
+
+        searchJobs(titleQuery, locationQuery)
+    }
+
+    private fun hideKeyboard() {
+        val inputMethodManager =
+            requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(binding.root.windowToken, 0)
+    }
+
+    private fun searchJobs(titleQuery: String, locationQuery: String) {
         firestore = FirebaseFirestore.getInstance()
         val userId = FirebaseAuth.getInstance().currentUser?.uid
-
-        // Fetch saved jobs first
         val savedJobsMap = mutableSetOf<String>()
 
         if (userId != null) {
@@ -73,15 +109,23 @@ class JobsFragment : Fragment() {
                         savedJobsMap.add("${savedJob.title}_${savedJob.company}")
                     }
 
-                    // Fetch all jobs
                     firestore.collection("jobs").get()
                         .addOnSuccessListener { result ->
                             jobList.clear()
                             for (document in result) {
                                 val job = document.toObject(Job::class.java)
-                                val key = "${job.title}_${job.company}"
-                                job.isSaved = savedJobsMap.contains(key)
-                                jobList.add(job)
+
+                                // Apply search filter
+                                val matchesTitle = titleQuery.isEmpty() ||
+                                        job.title?.contains(titleQuery, ignoreCase = true) == true
+                                val matchesLocation = locationQuery.isEmpty() ||
+                                        job.location?.contains(locationQuery, ignoreCase = true) == true
+
+                                if (matchesTitle && matchesLocation) {
+                                    val key = "${job.title}_${job.company}"
+                                    job.isSaved = savedJobsMap.contains(key)
+                                    jobList.add(job)
+                                }
                             }
                             adapter.notifyDataSetChanged()
                         }
@@ -89,4 +133,7 @@ class JobsFragment : Fragment() {
         }
     }
 
+    private fun fetchJobsFromFirestore() {
+        searchJobs("", "") // Load all jobs initially
+    }
 }

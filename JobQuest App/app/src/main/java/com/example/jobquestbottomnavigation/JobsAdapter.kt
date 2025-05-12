@@ -19,6 +19,7 @@ class JobsAdapter(
         val title: TextView = itemView.findViewById(R.id.title)
         val company: TextView = itemView.findViewById(R.id.company)
         val salary: TextView = itemView.findViewById(R.id.salary)
+        val location: TextView = itemView.findViewById(R.id.location)
         val saveButton: ImageView = itemView.findViewById(R.id.saveButton)
     }
 
@@ -32,8 +33,9 @@ class JobsAdapter(
         val job = jobList[position]
 
         holder.title.text = job.title
-        holder.company.text = "${job.company} • ${job.location}"
+        holder.company.text = job.company
         holder.salary.text = job.salary
+        holder.location.text = job.location
 
         // Set correct icon based on isSaved
         if (job.isSaved) {
@@ -60,14 +62,14 @@ class JobsAdapter(
                     // Already saved → remove from saved
                     jobDoc.delete().addOnSuccessListener {
                         job.isSaved = false
-                        holder.saveButton.setImageResource(R.drawable.save_icon_white_inside)
+                        notifyItemChanged(position)
                         Toast.makeText(holder.itemView.context, "Removed from saved", Toast.LENGTH_SHORT).show()
                     }
                 } else {
                     // Not saved → save it
                     jobDoc.set(job).addOnSuccessListener {
                         job.isSaved = true
-                        holder.saveButton.setImageResource(R.drawable.saved_button)
+                        notifyItemChanged(position)
                         Toast.makeText(holder.itemView.context, "Saved", Toast.LENGTH_SHORT).show()
                     }
                 }
@@ -77,8 +79,13 @@ class JobsAdapter(
         }
     }
 
-
-
-
     override fun getItemCount(): Int = jobList.size
+
+    fun updateJob(updatedJob: Job) {
+        val index = jobList.indexOfFirst { it.title == updatedJob.title && it.company == updatedJob.company }
+        if (index != -1) {
+            (jobList as MutableList)[index] = updatedJob
+            notifyItemChanged(index)
+        }
+    }
 }
