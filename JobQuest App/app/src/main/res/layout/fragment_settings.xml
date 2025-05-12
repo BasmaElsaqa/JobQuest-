@@ -3,32 +3,40 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#FFFFFF">
+    android:padding="16dp">
 
     <TextView
-        android:text="Change Password"
-        android:drawableLeft="@drawable/lock"
-        android:padding="16dp"
-        android:background="?attr/selectableItemBackground"
+        android:id="@+id/change_password_tv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/lock"
+        android:drawableEnd="@drawable/settings_button"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Change Password" />
 
     <TextView
-        android:text="Delete My Account"
-        android:drawableLeft="@drawable/delete"
-        android:padding="16dp"
-        android:background="?attr/selectableItemBackground"
+        android:id="@+id/delete_account_tv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/delete"
+        android:drawableEnd="@drawable/settings_button"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Delete My Account" />
 
     <TextView
         android:id="@+id/logout_tv"
-        android:text="Log Out"
-        android:drawableLeft="@drawable/ic_logout"
-        android:padding="16dp"
-        android:background="?attr/selectableItemBackground"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_logout"
+        android:drawableEnd="@drawable/settings_button"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Log Out" />
 </LinearLayout>

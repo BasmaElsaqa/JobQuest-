@@ -17,43 +17,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
-
-            <!-- Reminder Card 1 -->
-
-
-            <!-- Reminder Card 2 -->
-            <androidx.cardview.widget.CardView
+            <!-- RecyclerView for displaying reminders -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/remindersRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:elevation="4dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginBottom="16dp"/>
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:text="Update Resume"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                    <TextView
-                        android:text="Due Apr 30, 2025"
-                        android:textSize="14sp"
-                        android:textColor="#888888"
-                        android:paddingTop="4dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- إدخال تذكير جديد -->
+            <!-- Input fields for new reminder -->
             <EditText
                 android:id="@+id/editTitle"
                 android:layout_width="match_parent"
@@ -67,11 +38,13 @@
                 android:id="@+id/editDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Due Date"
-                android:inputType="date"
+                android:hint="Select Date and Time"
+                android:focusable="false"
+                android:clickable="true"
                 android:padding="12dp"
                 android:background="@drawable/edittext_bg"
                 android:layout_marginBottom="16dp"/>
+
 
             <Button
                 android:id="@+id/btnSave"

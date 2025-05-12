@@ -6,8 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     card_view:cardCornerRadius="8dp"
-    card_view:cardElevation="2dp"
-    >
+    card_view:cardElevation="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +27,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:text="Interview Scheduled"
+                android:id="@+id/notificationTitle"
+                android:text="Reminder Title"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:textSize="14sp"
@@ -36,16 +36,10 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:text="Tech Corp - Frontend Developer"
+                android:id="@+id/notificationDate"
+                android:text="Due Date"
                 android:textSize="13sp"
                 android:textColor="#666666"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:text="2 hours ago"
-                android:textSize="12sp"
-                android:textColor="#AAAAAA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
