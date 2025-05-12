@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "480627081191",
+    "firebase_url": "https://jobquest-b1284-default-rtdb.firebaseio.com",
     "project_id": "jobquest-b1284",
     "storage_bucket": "jobquest-b1284.firebasestorage.app"
   },

@@ -5,5 +5,6 @@
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">AIzaSyC7O5yfc1VZSxcOuC4HJwuC17wsSFtY13c</string>
 
 </resources>
