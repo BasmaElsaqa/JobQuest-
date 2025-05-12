@@ -6,14 +6,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.track.TrackFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/track_page_header"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:background="@drawable/header_stroke"
+        android:elevation="2dp"
+        android:paddingHorizontal="2dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TextView
+            android:id="@+id/track_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jobs Tracking"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="start"
+            android:src="@drawable/longarrow" />
+    </androidx.appcompat.widget.Toolbar>
+
     <!-- Tab Layout -->
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/status_tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/track_page_header"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- ViewPager2 -->
     <androidx.viewpager2.widget.ViewPager2

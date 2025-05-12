@@ -21,6 +21,9 @@
             android:name=".EditProfileActivity"
             android:exported="false" />
         <activity
+            android:name=".EditProposalActivity"
+            android:exported="false" />
+        <activity
             android:name=".ApplyForPositionActivity"
             android:exported="false" />
         <activity
