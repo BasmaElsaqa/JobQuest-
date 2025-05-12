@@ -11,12 +11,13 @@
         android:id="@+id/change_password_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackground"
+
         android:drawableStart="@drawable/lock"
         android:drawableEnd="@drawable/settings_button"
         android:drawablePadding="8dp"
         android:padding="16dp"
-        android:text="Change Password" />
+        android:text="Change Password"
+        />
 
     <TextView
         android:id="@+id/delete_account_tv"

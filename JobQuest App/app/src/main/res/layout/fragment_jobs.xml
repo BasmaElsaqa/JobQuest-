@@ -8,7 +8,7 @@
     android:background="#F5F5F5"
     tools:context=".ui.jobs.JobsFragment">
 
-    <!-- Page Header -->
+    <!-- Toolbar/Header -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/track_page_header"
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
             android:src="@drawable/longarrow" />
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- Content Container with Padding -->
+    <!-- Main Content -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -43,8 +43,7 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-
-        <!-- Search Fields -->
+        <!-- Search Inputs -->
         <EditText
             android:id="@+id/jobTitleInput"
             android:layout_width="match_parent"
@@ -52,15 +51,18 @@
             android:hint="Job Title or Keyword"
             android:padding="12dp"
             android:background="@drawable/edittext_bg"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginBottom="12dp"
+            android:inputType="text" />
+
         <EditText
-            android:id="@+id/location_input"
+            android:id="@+id/locationInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="location"
+            android:hint="Location"
             android:padding="12dp"
             android:background="@drawable/edittext_bg"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginBottom="12dp"
+            android:inputType="text" />
 
         <!-- Search Button -->
         <com.google.android.material.button.MaterialButton
@@ -71,52 +73,8 @@
             android:backgroundTint="#000000"
             android:textColor="#FFFFFF"
             app:cornerRadius="12dp"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            android:padding="12dp" />
 
-        <!-- Filters Row -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="start"
-            android:layout_marginBottom="16dp">
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Filters"
-                android:textColor="#000000"
-                android:backgroundTint="#EEEEEE"
-                android:padding="8dp"
-                android:layout_marginEnd="8dp" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Full-time"
-                android:textColor="#000000"
-                android:backgroundTint="#EEEEEE"
-                android:padding="8dp"
-                android:layout_marginEnd="8dp" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Remote"
-                android:textColor="#000000"
-                android:backgroundTint="#EEEEEE"
-                android:padding="8dp"
-                android:layout_marginEnd="8dp" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="$80k+"
-                android:textColor="#000000"
-                android:backgroundTint="#EEEEEE"
-                android:padding="8dp" />
-        </LinearLayout>
 
         <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
@@ -125,5 +83,6 @@
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/jobs_item_list" />
+
     </LinearLayout>
 </LinearLayout>
