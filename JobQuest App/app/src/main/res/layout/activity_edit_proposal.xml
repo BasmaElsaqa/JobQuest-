@@ -9,7 +9,7 @@
 
     <!-- Page Header -->
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/track_page_header"
+        android:id="@+id/edit_proposal_page_header"
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:background="@drawable/header_stroke"
@@ -18,10 +18,10 @@
         >
 
         <TextView
-            android:id="@+id/applying_position"
+            android:id="@+id/edit_proposal_page_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apply for Position"
+            android:text="Edit Proposal"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#000000"
@@ -168,15 +168,14 @@
 
             <!-- Buttons -->
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/submit_btn"
+                android:id="@+id/save_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Submit Application"
+                android:text="Save"
                 android:textColor="#FFFFFF"
                 android:backgroundTint="#000000"
                 app:cornerRadius="12dp"
                 android:padding="14dp" />
-
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/cancel_btn"

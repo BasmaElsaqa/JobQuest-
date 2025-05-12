@@ -32,6 +32,13 @@ class SavedFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_saved, container, false)
+
+        // Handle back button click
+        val backArrow = view.findViewById<View>(R.id.back_arrow)
+        backArrow.setOnClickListener {
+            requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
+
         recyclerView = view.findViewById(R.id.recyclerSavedJobs)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
@@ -54,6 +61,7 @@ class SavedFragment : Fragment() {
 
         return view
     }
+
 
     private fun fetchSavedJobs() {
         val userId = auth.currentUser?.uid

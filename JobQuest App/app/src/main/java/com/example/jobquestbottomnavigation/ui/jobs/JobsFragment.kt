@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.jobquestbottomnavigation.Job
 import com.example.jobquestbottomnavigation.JobDetailsActivity
 import com.example.jobquestbottomnavigation.JobsAdapter
+import com.example.jobquestbottomnavigation.R
 import com.example.jobquestbottomnavigation.databinding.FragmentJobsBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -28,6 +29,11 @@ class JobsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentJobsBinding.inflate(inflater, container, false)
+
+        // Back arrow click
+        binding.trackPageHeader.findViewById<View>(R.id.back_arrow).setOnClickListener {
+            requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
 
 
         jobList = ArrayList()
